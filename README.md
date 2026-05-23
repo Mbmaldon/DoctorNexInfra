@@ -1,12 +1,12 @@
-# VitaNex Infra
+# DoctorNex Infra
 
-Repositorio de infraestructura para el ecosistema **VitaNex**. Contiene la configuración de entorno local para desarrollo.
+Repositorio de infraestructura para el ecosistema **DoctorNex**. Contiene la configuración de entorno local para desarrollo.
 
 ## Repositorios del proyecto
 
 | Repo | Descripción | Puerto |
 |---|---|---|
-| `VitaNexInfra` | Este repo — infraestructura local | — |
+| `DoctorNexInfra` | Este repo — infraestructura local | — |
 | `VitaCareBackendAuth` | Microservicio de autenticación | 3000 |
 | `VitaCareBackendCore` | Microservicio core del negocio | 3001 |
 | `VitaCareFrontend` | Aplicación frontend | 4200 |
@@ -33,9 +33,9 @@ docker compose up -d
 ```
 
 Esto crea automáticamente:
-- Base de datos `vita_nex_auth` (Auth Service)
-- Base de datos `vita_nex_core` (Core Service)
-- Usuario `vitanex` con acceso a ambas bases
+- Base de datos `doctor_nex_auth` (Auth Service)
+- Base de datos `doctor_nex_core` (Core Service)
+- Usuario `doctornex` con acceso a ambas bases
 
 ### 3. Correr cada microservicio
 

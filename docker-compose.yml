@@ -1,13 +1,15 @@
+name: doctornex-infra
+
 services:
   mysql:
     image: mysql:8.0
-    container_name: vita-nex-mysql
+    container_name: doctornex-mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE: vita_nex_auth
+      MYSQL_DATABASE: doctor_nex_auth
     ports:
       - '3306:3306'
     volumes:
@@ -21,7 +23,7 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: vita-nex-redis
+    container_name: doctornex-redis
     restart: unless-stopped
     ports:
       - '6379:6379'
