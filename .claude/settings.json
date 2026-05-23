@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/antoniomaldonado/GitHub/VitaNexInfra status)",
+      "Bash(git -C /Users/antoniomaldonado/GitHub/VitaNexInfra diff)",
+      "Bash(git -C /Users/antoniomaldonado/GitHub/VitaNexInfra log --oneline -5)",
+      "Bash(git -C /Users/antoniomaldonado/GitHub/VitaNexInfra add .env.example README.md docker-compose.yml docker/init.sql)",
+      "Bash(git -C /Users/antoniomaldonado/GitHub/VitaNexInfra commit -m \"refactor: rename VitaNex to DoctorNex across all config files\")",
+      "Bash(docker compose *)"
+    ]
+  }
+}
