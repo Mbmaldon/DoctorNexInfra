@@ -5,6 +5,7 @@ services:
     image: mysql:8.0
     container_name: doctornex-mysql
     restart: unless-stopped
+    command: --log-bin-trust-function-creators=1
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${MYSQL_USER}
